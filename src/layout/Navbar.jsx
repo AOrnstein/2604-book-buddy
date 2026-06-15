@@ -5,10 +5,10 @@ import { useAuth } from "../auth/AuthContext";
 export default function Navbar() {
   const { token, logout } = useAuth();
   return (
-    <header>
-      <NavLink to="/">
+    <header className="navbar">
+      <NavLink className="brand" to="/">
         <img src="./books.png" alt="book buddy logo" />
-        <p>BookBuddy</p>
+        <p>Book Buddy</p>
       </NavLink>
       <nav>
         <NavLink to="/books">Books</NavLink>
