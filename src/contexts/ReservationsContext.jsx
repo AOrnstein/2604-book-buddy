@@ -28,7 +28,7 @@ export function ReservationsProvider({ children }) {
     await syncReservations();
   };
 
-  const value = { reservations, reserveBook, returnBook };
+  const value = { reservations, reserveBook, returnBook, syncReservations };
   return (
     <ReservationsContext.Provider value={value}>
       {children}
