@@ -15,7 +15,7 @@ export default function Login() {
     const email = formData.get("email");
     const password = formData.get("password");
     try {
-      await login({ email, password });
+      await login(email, password);
       navigate("/books");
     } catch (e) {
       setError(e.message);
